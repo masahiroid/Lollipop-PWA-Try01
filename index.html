@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- manifest.jsonを呼び出しています -->
+	<meta charset="Shift_JIS">
+	<link rel="manifest" href="./manifest.json">
+
+	<script>
+	// service workerが有効なら、service-worker.js を登録します
+	if ('serviceWorker' in navigator) {
+	navigator.serviceWorker.register('./service-worker.js').then(function() { console.log('Service Worker Registered'); });}
+	</script>
+	
+	<title>Lollipop-PWA</title>
+	
+	<style>
+	body {
+	background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAC4jAAAuIwF4pT92AAAAJklEQVR4nGMUFBRkwAYEBASwijOOaqCJBkVFRawSHz58GNVAPw0AF6UcwQfow28AAAAASUVORK5CYII=");
+	text-align:center;
+	font-size: 20px;
+	font-color: #000000;
+	vertical-align: middle;
+	}
+	.image {
+	width: 25%; 
+	margin: auto;
+	display: block;
+	}
+	</style>
+</head>
+	<body><br>
+	<table border="0">
+		<tr><td style="width: 10%;"><center><font size="6" color="#ffffff"face="sans-serif">Lollipop-PWA</font></center></td></tr>
+		<td style="width: 10%;"><center><img src="./png.png" alt="PWA logo" class="image" /></center></td></tr>
+		<td style="width: 10%;"><center><a href="page-01.html"><br>次のページ</a></center></td></tr>
+	</table>		
+	</body>
+</html>
+
